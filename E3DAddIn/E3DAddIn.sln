@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3DAddIn_1", "E3DAddIn_1\E3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3DAddIn_2", "E3DAddIn_2\E3DAddIn_2.csproj", "{966C8505-01C0-479F-9C7B-F637C29DD6D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3DAddIn_3", "E3DAddIn_3\E3DAddIn_3.csproj", "{4CC46BD0-ADE7-47C4-93C2-136B2B7A06C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{966C8505-01C0-479F-9C7B-F637C29DD6D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{966C8505-01C0-479F-9C7B-F637C29DD6D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{966C8505-01C0-479F-9C7B-F637C29DD6D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC46BD0-ADE7-47C4-93C2-136B2B7A06C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC46BD0-ADE7-47C4-93C2-136B2B7A06C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC46BD0-ADE7-47C4-93C2-136B2B7A06C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC46BD0-ADE7-47C4-93C2-136B2B7A06C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

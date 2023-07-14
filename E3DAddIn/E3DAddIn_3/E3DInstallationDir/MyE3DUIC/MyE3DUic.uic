@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserInterfaceCustomization xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="www.aveva.com">
+  <Version>1.0</Version>
+  <FormsMetaData />
+  <Tools>
+    <ButtonTool Name="MyE3DAddIn.Button1">
+      <Command>
+        <Type>Instance</Type>
+        <Key>E3DAddIn_3.DockingWindowCmd</Key>
+        <Arguments />
+      </Command>
+      <Image />
+      <Caption>DockingWindow</Caption>
+      <HelpContext />
+      <DisplayStyle>Default</DisplayStyle>
+    </ButtonTool>
+  </Tools>
+  <InstanceTools />
+  <MenuBar />
+  <CommandBars />
+  <TaskPanes />
+  <ContextMenus />
+  <AreaLeftTools />
+  <AreaRightTools />
+  <FooterTools />
+  <NavigationMenuTools />
+  <QATTools />
+  <ContextualTabGroups />
+  <TabToolbarTools />
+  <Tabs>
+    <Tab Name="MyE3DAddIn.Tab0">
+      <Caption>MyE3DAddin</Caption>
+      <ContextualTabGroup>
+        <Item>None</Item>
+      </ContextualTabGroup>
+      <Groups>
+        <Group Name="MyE3DAddIn.MyE3DAddinGroup1">
+          <Tools>
+            <Tool Name="MyE3DAddIn.Button1" />
+          </Tools>
+          <Caption>E3DAddIn_3</Caption>
+        </Group>
+      </Groups>
+    </Tab>
+  </Tabs>
+  <MiniToolbarTools />
+  <Namespace>MyE3DAddIn</Namespace>
+</UserInterfaceCustomization>
