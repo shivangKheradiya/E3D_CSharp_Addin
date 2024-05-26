@@ -14,6 +14,17 @@
       <HelpContext />
       <DisplayStyle>Default</DisplayStyle>
     </ButtonTool>
+    <StateButtonTool Name="MyE3DAddIn.MDIWindow">
+      <Command>
+        <Type>Instance</Type>
+        <Key>E3DAddIn_3.MdiWindowCmd</Key>
+        <Arguments />
+      </Command>
+      <Image />
+      <Caption>MDIWindow</Caption>
+      <HelpContext />
+      <DisplayStyle>TextOnlyAlways</DisplayStyle>
+    </StateButtonTool>
   </Tools>
   <InstanceTools />
   <MenuBar />
@@ -37,6 +48,7 @@
         <Group Name="MyE3DAddIn.MyE3DAddinGroup1">
           <Tools>
             <Tool Name="MyE3DAddIn.Button1" />
+            <Tool Name="MyE3DAddIn.MDIWindow" />
           </Tools>
           <Caption>E3DAddIn_3</Caption>
         </Group>
