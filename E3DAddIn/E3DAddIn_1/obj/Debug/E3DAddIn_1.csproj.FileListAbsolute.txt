@@ -1,6 +1,0 @@
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_1\bin\Debug\E3DAddIn_1.dll
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_1\bin\Debug\E3DAddIn_1.pdb
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_1\obj\Debug\E3DAddIn_1.csproj.AssemblyReference.cache
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_1\obj\Debug\E3DAddIn_1.csproj.CoreCompileInputs.cache
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_1\obj\Debug\E3DAddIn_1.dll
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_1\obj\Debug\E3DAddIn_1.pdb

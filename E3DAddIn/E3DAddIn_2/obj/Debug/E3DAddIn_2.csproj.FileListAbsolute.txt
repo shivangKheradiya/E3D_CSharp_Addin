@@ -1,7 +1,0 @@
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_2\bin\Debug\E3DAddIn_2.dll
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_2\bin\Debug\E3DAddIn_2.pdb
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_2\obj\Debug\E3DAddIn_2.MyDockedControl.resources
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_2\obj\Debug\E3DAddIn_2.csproj.GenerateResource.cache
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_2\obj\Debug\E3DAddIn_2.csproj.CoreCompileInputs.cache
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_2\obj\Debug\E3DAddIn_2.dll
-D:\PSN\CSharpProjects\E3D_CSharp_Addin\E3DAddIn\E3DAddIn_2\obj\Debug\E3DAddIn_2.pdb
