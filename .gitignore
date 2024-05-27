@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/E3DAddIn/.vs/
+/E3DAddIn/E3DAddIn_1/obj/
+/E3DAddIn/E3DAddIn_2/obj/
+/E3DAddIn/E3DAddIn_3/obj/
+/E3DAddIn/E3DAddIn_4/obj/
+/E3DAddIn/E3DAddIn_5/obj/
+/E3DAddIn/E3DAddIn_6/obj/
+/E3DAddIn/E3DAddIn_1/bin/
+/E3DAddIn/E3DAddIn_2/bin/
+/E3DAddIn/E3DAddIn_3/bin/
+/E3DAddIn/E3DAddIn_4/bin/
+/E3DAddIn/E3DAddIn_5/bin/
+/E3DAddIn/E3DAddIn_6/bin/
