@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2C6A25C1-2BFE-47E7-B42C-8EEF3200CD49}</ProjectGuid>
+    <ProjectGuid>{4A8EC79A-D411-4B3A-BE5D-E1E20A2588E9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>E3DAddIn_1</RootNamespace>
-    <AssemblyName>E3DAddIn_1</AssemblyName>
+    <RootNamespace>E3DAddIn_4</RootNamespace>
+    <AssemblyName>E3DAddIn_4</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,35 +32,48 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Aveva.ApplicationFramework">
-      <HintPath>C:\cae_prog\AVEVA\v2.x\e3d\Aveva.ApplicationFramework.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\cae_prog\AVEVA\v2.x\e3d\Aveva.ApplicationFramework.dll</HintPath>
     </Reference>
     <Reference Include="Aveva.ApplicationFramework.Presentation">
-      <HintPath>C:\cae_prog\AVEVA\v2.x\e3d\Aveva.ApplicationFramework.Presentation.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\cae_prog\AVEVA\v2.x\e3d\Aveva.ApplicationFramework.Presentation.dll</HintPath>
     </Reference>
-    <Reference Include="Aveva.Core.Database">
-      <HintPath>C:\cae_prog\AVEVA\v2.x\e3d\Aveva.Core.Database.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MdiWpfWindowCmd.cs" />
     <Compile Include="MyAddIn.cs" />
+    <Compile Include="MyWpfUserControl.xaml.cs">
+      <DependentUpon>MyWpfUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="E3DInstallationDir\DesignAddins.xml" />
-    <Content Include="E3DInstallationDir\E3DAddIns\E3DAddIn_1.dll" />
+    <Content Include="E3DInstallationDir\DesignCustomization.xml" />
+    <Content Include="E3DInstallationDir\E3DAddIns\E3DAddIn_4.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E3DInstallationDir\MyE3DUIC\MyE3DUic.uic" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MyWpfUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
