@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3DAddIn_3", "E3DAddIn_3\E3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3DAddIn_4", "E3DAddIn_4\E3DAddIn_4.csproj", "{4A8EC79A-D411-4B3A-BE5D-E1E20A2588E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3DAddIn_5", "E3DAddIn_5\E3DAddIn_5.csproj", "{C59915B3-E69E-4BFD-907F-0F9C5DA3CCBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3DAddIn_6", "E3DAddIn_6\E3DAddIn_6.csproj", "{30A2A761-C594-42AF-B13A-43BC41B79B47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{4A8EC79A-D411-4B3A-BE5D-E1E20A2588E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A8EC79A-D411-4B3A-BE5D-E1E20A2588E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A8EC79A-D411-4B3A-BE5D-E1E20A2588E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C59915B3-E69E-4BFD-907F-0F9C5DA3CCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59915B3-E69E-4BFD-907F-0F9C5DA3CCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59915B3-E69E-4BFD-907F-0F9C5DA3CCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59915B3-E69E-4BFD-907F-0F9C5DA3CCBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30A2A761-C594-42AF-B13A-43BC41B79B47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30A2A761-C594-42AF-B13A-43BC41B79B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30A2A761-C594-42AF-B13A-43BC41B79B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30A2A761-C594-42AF-B13A-43BC41B79B47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
