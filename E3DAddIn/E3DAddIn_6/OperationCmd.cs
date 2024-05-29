@@ -28,5 +28,20 @@ namespace E3DAddIn_6
 
             base.Execute();
         }
+ 
+        public void Execute(string arg)
+        {
+            string tbValue = _textBoxCmd.Value.ToString();
+            string cbValue = _comboBoxCmd.Value.ToString();
+        
+            string message = "TextBox Value : " + tbValue + Environment.NewLine +
+                             "ComboBox Value : " + cbValue + Environment.NewLine + 
+                             "Argument : " + arg;
+        
+            MessageBox.Show(message);
+
+            base.Execute();
+        }
+
     }
 }

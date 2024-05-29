@@ -57,6 +57,7 @@
     <Compile Include="ComboBoxCmd.cs" />
     <Compile Include="MyAddIn.cs" />
     <Compile Include="OperationCmd.cs" />
+    <Compile Include="OperationOnArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TextBoxCmd.cs" />
   </ItemGroup>
