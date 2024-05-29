@@ -34,6 +34,8 @@ namespace E3DAddIn_6
             commandManager.Commands.Add(comboBoxCmd);
             commandManager.Commands.Add(operationCmd);
 
+            OperationOnArgs operationOnArgs = new OperationOnArgs(commandManager);
+            operationOnArgs.performOperations();
         }
 
         public void Stop()
