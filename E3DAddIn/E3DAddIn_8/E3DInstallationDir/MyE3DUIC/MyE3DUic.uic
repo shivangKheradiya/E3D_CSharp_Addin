@@ -3,26 +3,14 @@
   <Version>1.0</Version>
   <FormsMetaData />
   <Tools>
-    <TextBoxTool Name="MyE3DAddIn.MyTextBox">
+    <ButtonTool Name="MyE3DAddIn.NetGridForm">
       <Command>
         <Type>Instance</Type>
-        <Key>E3DAddIn_7.TextBoxCmd</Key>
+        <Key>E3DAddIn_8.GridCmd</Key>
         <Arguments />
       </Command>
       <Image />
-      <Caption>MyTextBox</Caption>
-      <HelpContext />
-      <DisplayStyle>Default</DisplayStyle>
-      <DisplayText />
-    </TextBoxTool>
-    <ButtonTool Name="MyE3DAddIn.OperationButton">
-      <Command>
-        <Type>Instance</Type>
-        <Key>E3DAddIn_7.ExceptionCmd</Key>
-        <Arguments />
-      </Command>
-      <Image />
-      <Caption>Operation</Caption>
+      <Caption>Net Grid Form</Caption>
       <HelpContext />
       <DisplayStyle>ImageAndText</DisplayStyle>
     </ButtonTool>
@@ -61,10 +49,9 @@
       <Groups>
         <Group Name="MyE3DAddIn.MyE3DAddinGroup1">
           <Tools>
-            <Tool Name="MyE3DAddIn.MyTextBox" />
-            <Tool Name="MyE3DAddIn.OperationButton" />
+            <Tool Name="MyE3DAddIn.NetGridForm" />
           </Tools>
-          <Caption>E3DAddIn_7</Caption>
+          <Caption>E3DAddIn_8</Caption>
         </Group>
       </Groups>
     </Tab>
