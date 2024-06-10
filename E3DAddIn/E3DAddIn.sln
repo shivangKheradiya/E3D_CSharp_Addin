@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3DAddIn_9", "E3DAddIn_9\E3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3DAddIn_10", "E3DAddIn_10\E3DAddIn_10.csproj", "{5A2F7BD7-8587-4418-A09B-69054C7D404C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3DAddIn_11", "E3DAddIn_11\E3DAddIn_11.csproj", "{78CED5F8-6DD5-409A-96B9-654F6B4D6607}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{5A2F7BD7-8587-4418-A09B-69054C7D404C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A2F7BD7-8587-4418-A09B-69054C7D404C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A2F7BD7-8587-4418-A09B-69054C7D404C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78CED5F8-6DD5-409A-96B9-654F6B4D6607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78CED5F8-6DD5-409A-96B9-654F6B4D6607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78CED5F8-6DD5-409A-96B9-654F6B4D6607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78CED5F8-6DD5-409A-96B9-654F6B4D6607}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
