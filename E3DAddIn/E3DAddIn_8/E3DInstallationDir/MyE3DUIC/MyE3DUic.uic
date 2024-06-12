@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserInterfaceCustomization xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="www.aveva.com">
+  <Version>1.0</Version>
+  <FormsMetaData />
+  <Tools>
+    <ButtonTool Name="MyE3DAddIn.NetGridForm">
+      <Command>
+        <Type>Instance</Type>
+        <Key>E3DAddIn_8.GridCmd</Key>
+        <Arguments />
+      </Command>
+      <Image />
+      <Caption>Net Grid Form</Caption>
+      <HelpContext />
+      <DisplayStyle>ImageAndText</DisplayStyle>
+    </ButtonTool>
+  </Tools>
+  <InstanceTools />
+  <MenuBar />
+  <CommandBars>
+    <CommandBar Name="MyE3DAddIn.OperationCommandBar">
+      <Tools />
+      <DockedColumn>1</DockedColumn>
+      <DockedRow>1</DockedRow>
+      <DockedPosition>Top</DockedPosition>
+      <AllowFloating>true</AllowFloating>
+      <AllowHiding>true</AllowHiding>
+      <FillEntireRow>false</FillEntireRow>
+      <ShowInToolbarList>true</ShowInToolbarList>
+      <Caption>OperationCommandBar</Caption>
+      <ApplicationContext />
+    </CommandBar>
+  </CommandBars>
+  <TaskPanes />
+  <ContextMenus />
+  <AreaLeftTools />
+  <AreaRightTools />
+  <FooterTools />
+  <NavigationMenuTools />
+  <QATTools />
+  <ContextualTabGroups />
+  <TabToolbarTools />
+  <Tabs>
+    <Tab Name="MyE3DAddIn.Tab0">
+      <Caption>MyE3DAddin</Caption>
+      <ContextualTabGroup>
+        <Item>None</Item>
+      </ContextualTabGroup>
+      <Groups>
+        <Group Name="MyE3DAddIn.MyE3DAddinGroup1">
+          <Tools>
+            <Tool Name="MyE3DAddIn.NetGridForm" />
+          </Tools>
+          <Caption>E3DAddIn_8</Caption>
+        </Group>
+      </Groups>
+    </Tab>
+  </Tabs>
+  <MiniToolbarTools />
+  <Namespace>MyE3DAddIn</Namespace>
+</UserInterfaceCustomization>
