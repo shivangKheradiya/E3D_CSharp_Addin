@@ -24,9 +24,8 @@ For starting with this repository It's assumed that you are familar with the fol
 Each project includes a `MyAddin.cs` class containing the core C# `IAddin` Interface implimentation into a class library. These libraries are consumed by AVEVA during application startup and all corrosponding chages required in the installation director is in the `E3DInstallationDir` folder.
 
 To run the examples:
-
-- Place the compiled DLLs 
-- Create a folder for placing Addins data files such as `E3DAddins` folder Inside the AVEVA installation directory
+ 
+- Create a folder for placing compiled DLLs and other Addins data files such as `E3DAddins` folder Inside the AVEVA installation directory
 - If required, Create a folder for placing UIC files required for addin such as `MyE3DUIC` folder Inside the AVEVA installation directory.
 - Update two important files into design installation directory. 
     - `DesignAddins.xml` : Helps to register User Interface files e.g. UIC during the AVEVA Startup.
@@ -35,6 +34,7 @@ To run the examples:
 These procedure will remain common irrespective of the examples mentioned in this repository.
 
 However, depending upon the setup of the AVEVA Variables folder location may vary from company to company.
+
 ---
 
 ## 📂 Table of Contents
