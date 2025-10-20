@@ -33,7 +33,9 @@ To run the examples:
 
 These procedure will remain common irrespective of the examples mentioned in this repository.
 
-However, depending upon the setup of the AVEVA Variables folder location may vary from company to company.
+However, depending upon the setup of the AVEVA Variables folder location may vary from company to company. and depending upon the application for which you are creating addins, the some steps and references may vary.
+
+[`StartAPSE3D.bat`](./E3DAddIn/StartAPSE3D.bat) contains the script helps to directly open the Project within E3D. helpes to repid testing without entering the credentials in the startup form.
 
 ---
 
