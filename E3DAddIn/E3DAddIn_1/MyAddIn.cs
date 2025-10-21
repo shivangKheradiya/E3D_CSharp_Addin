@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace E3DAddIn_1
 {
-    public class MyAddIn : IAddin
+    public class MyAddIn : IAddinInjected
     {
         public string Name
         {
@@ -23,6 +23,11 @@ namespace E3DAddIn_1
         public void Start(ServiceManager serviceManager)
         {
             MessageBox.Show("Welcome To My Addin");
+        }
+
+        public void Start(IDependencyResolver resolver)
+        {
+            MessageBox.Show("IAddinInjected Started");
         }
 
         public void Stop()
