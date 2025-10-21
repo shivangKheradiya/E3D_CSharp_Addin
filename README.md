@@ -12,6 +12,7 @@ This repository represent the standard methods to effectively use the AVEVA IAdd
 
 For starting with this repository It's assumed that you are familar with the following key cocepts,
 - C# Language
+- Basic Concepts for WPF and WinForms
 - [PML](https://github.com/shivangKheradiya/AVEVA_PML)
 - [PMLNet](https://github.com/shivangKheradiya/PMLNet)
 - AVEVA Environment Setup Process [Example](https://github.com/shivangKheradiya/AVEVAEnvironment)
@@ -46,6 +47,8 @@ However, depending upon the setup of the AVEVA Variables folder location may var
 - A simple “Hello World” Add-in example for AVEVA E3D
 
 ### [🔹 E3DAddIn_2](./E3DAddIn/E3DAddIn_2/README.md)
+
+- The project demonstrates how to extend AVEVA™ E3D functionality by integrating UI components, commands, and services using C#.
 
 ### [🔹 E3DAddIn_3](./E3DAddIn/E3DAddIn_3/README.md)
 
