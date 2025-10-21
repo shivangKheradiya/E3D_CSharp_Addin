@@ -43,6 +43,8 @@ However, depending upon the setup of the AVEVA Variables folder location may var
 
 ### [🔹 E3DAddIn_1](./E3DAddIn/E3DAddIn_1/README.md)
 
+- A simple “Hello World” Add-in example for AVEVA E3D
+
 ### [🔹 E3DAddIn_2](./E3DAddIn/E3DAddIn_2/README.md)
 
 ### [🔹 E3DAddIn_3](./E3DAddIn/E3DAddIn_3/README.md)
