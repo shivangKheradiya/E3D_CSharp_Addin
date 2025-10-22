@@ -52,7 +52,11 @@ However, depending upon the setup of the AVEVA Variables folder location may var
 
 ### [🔹 E3DAddIn_3](./E3DAddIn/E3DAddIn_3/README.md)
 
+- Focuses on demonstrating the use of **MDI (Multiple Document Interface) windows** and other types of the possible Window UI in AVEVA™ E3D.
+
 ### [🔹 E3DAddIn_4](./E3DAddIn/E3DAddIn_4/README.md)
+
+- It demonstrates how to integrate **WPF (Windows Presentation Foundation)** `UserControl` elements into AVEVA™ E3D using an **MDI Window**.
 
 ### [🔹 E3DAddIn_5](./E3DAddIn/E3DAddIn_5/README.md)
 
