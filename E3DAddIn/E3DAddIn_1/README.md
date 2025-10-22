@@ -42,9 +42,9 @@ To integrate with E3D’s APIs, add the following DLLs from your **AVEVA install
 
 Rename the default class to **`MyAddIn.cs`** and implement the `IAddinInjected` interface.
 
-If you are targeting **legacy PDMS**, use `IAddin` instead.
+If you are targeting **legacy PDMS**, use `IAddin` instead. It will use `Start(ServiceManager serviceManager)` method during startup.
 
-> ⚠️ For newer versions (E3D 3.x+), **`IAddinInjected`** is the preferred interface since `IAddin` is deprecated.
+> ⚠️ For newer versions (E3D 3.x+), **`IAddinInjected`** is the preferred interface since `IAddin` is deprecated. It will use `Start(IDependencyResolver resolver)` method during startup.
 
 A minimal implementation looks like this:
 ([View Full Example → `MyAddIn.cs`](./MyAddIn.cs))

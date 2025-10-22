@@ -17,9 +17,27 @@ It focuses on how to:
 
 Within the `Start()` method of your Add-in implementation, obtain instances of `WindowManager` and `CommandManager` using the `ServiceManager` provided by E3D:
 
+Old Lagacy way for accessing the instance for existing service.
 ```csharp
 CommandManager E3DCommandManager = (CommandManager)serviceManager.GetService(typeof(CommandManager));
 WindowManager E3DWindowManager = (WindowManager)serviceManager.GetService(typeof(WindowManager));
+```
+
+New way for accessing the instance for existing service.
+```csharp
+WindowManager E3DWindowManager = (WindowManager)DependencyResolver.GetImplementationOf<IWindowManager>();
+CommandManager E3DCommandManager = (CommandManager)DependencyResolver.GetImplementationOf<ICommandManager>();
+```
+
+New way for accessing the instance within `Start(IDependencyResolver resolver)` method for existing service.
+```csharp
+public void Start(IDependencyResolver resolver)
+{
+    WindowManager E3DWindowManager = (WindowManager)resolver.GetImplementationOf<IWindowManager>();
+    CommandManager E3DCommandManager = (CommandManager)resolver.GetImplementationOf<ICommandManager>();
+    DockingWindowCmd dwCmd = new DockingWindowCmd(E3DWindowManager);
+    E3DCommandManager.Commands.Add(dwCmd);
+}
 ```
 
 These managers allow you to register custom commands and create UI windows programmatically.

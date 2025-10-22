@@ -28,6 +28,7 @@ namespace E3DAddIn_1
         public void Start(IDependencyResolver resolver)
         {
             MessageBox.Show("IAddinInjected Started");
+            MessageBox.Show("Welcome To My Addin");
         }
 
         public void Stop()
