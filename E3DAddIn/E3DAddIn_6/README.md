@@ -1,36 +1,5 @@
 # 🔹 E3DAddIn_6
 
-This example demostrates the implimentation usecase for the UI Elements such as Textbox and Combobox the E3D.
-
-Ususally When we impliment any UI Elements, It must be binded with the Key. The same key is used into the command class and consumed in the other part where the behaviours are utilized.
-
-Within this example, the command [`OperationCmd`](./OperationCmd.cs) is created using [`TextBoxCmd`](./TextBoxCmd.cs) and [`ComboBoxCmd`](./ComboBoxCmd.cs). `OperationCmd` has 2 execute methods,
-1. Without Arguments : It will display values in messegebox for the values setup in the `TextBox` and `ComboBox` respectively. 
-2. With Arguments : It will display values in messegebox for the values setup in the `TextBox` and `ComboBox` respectively with whatever argument is passed.
-
-If there is a requirement for preprocessing or post processing some data before executing these commands then such implimentation is written into [`OperationOnArgs`](./OperationOnArgs.cs) class.
-The method used for registering the preprocessing events are written `performOperations()` voice method.
-
-Command Manager instance is used to retrive the command class instance using the key `E3DAddIn_6.OperationCmd`. and `BeforeCommandExecute` deligate is extended to run the custom logic. This Custom logic is Checking the TextBox Value using command key `E3DAddIn_6.TextBoxCmd`. If TextBox Value empty then `Text Box is Empty. Operation Aborted.` messege going to be printed in the commandline.
-
-The [UIC file](./E3DInstallationDir/MyE3DUIC/MyE3DUic.uic) is customized in such a way that It contains,
-
-1. Tab: `MyE3DAddIn.Tab0`
-2. Group: `MyE3DAddIn.MyE3DAddinGroup1`
-3. Tools:
-    - `MyE3DAddIn.MyTextBox` : with the same Command Key as c#. 
-    - `MyE3DAddIn.MyComboBox` :  with the same Command Key as c#. Value0, Value1 Value2 Value3 as list of values
-    - `MyE3DAddIn.OperationButton` : Without any argument
-    - `MyE3DAddIn.OperationButtonWithArgs` : With `MyArgs` as argument.
-
-Write something in the TextBox and select some value in ComboBox. after that just click on the button and obsurve the output either in commandline or messegebox.
-
-Here’s a refined and professional version of your **E3DAddIn_6** writeup, rewritten for clarity, readability, and technical precision — consistent with your previous sections’ tone and style:
-
----
-
-## 🔹 E3DAddIn_6
-
 This example demonstrates the **implementation and interaction of UI elements** such as **TextBox** and **ComboBox** implimentation in ribbon within **AVEVA E3D** using the Add-In framework.
 
 In AVEVA E3D, when implementing UI elements, each control (like TextBox or ComboBox) must be **bound to a unique command key**.
@@ -91,6 +60,8 @@ The [UIC file](./E3DInstallationDir/MyE3DUIC/MyE3DUic.uic) is customized to incl
 | **Tool**       | `MyE3DAddIn.OperationButton`         | Executes the operation command **without arguments**.                                                       |
 | **Tool**       | `MyE3DAddIn.OperationButtonWithArgs` | Executes the operation command **with “MyArgs”** as argument.                                               |
 
+This UIC Customization can be carried out using the **Customize button** available in ribbon.
+
 ---
 
 ### ▶️ How to Test
@@ -109,7 +80,3 @@ The [UIC file](./E3DInstallationDir/MyE3DUIC/MyE3DUic.uic) is customized to incl
 
 This example highlights the **integration of interactive UI controls with backend command logic** in AVEVA E3D.
 It provides a foundation for creating **dynamic, data-driven interfaces** — where user input and command execution can be tightly coupled, opening the door to highly customizable automation and user experiences.
-
----
-
-Would you like me to include a **small visual schematic** (like a table or flow diagram) showing how `UIC → Command Key → Command Class → Preprocessing → Output` flow works? It can make the concept instantly clear to readers in documentation.
