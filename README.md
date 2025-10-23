@@ -42,6 +42,8 @@ However, depending upon the setup of the AVEVA Variables folder location may var
 
 ## 📂 Table of Contents
 
+This Set of examples are prepared in such a way that majority of the examples are dependednt on previous examples to understand the integration in better manner.
+
 ### [🔹 E3DAddIn_1](./E3DAddIn/E3DAddIn_1/README.md)
 
 - A simple “Hello World” Add-in example for AVEVA E3D
@@ -89,6 +91,10 @@ In AVEVA’s API, **collections** allow you to gather `DbElements` dynamically b
 This example demonstrates several **filter types** and their combinations to perform efficient, object-oriented database queries in E3D.
 
 ### [🔹 E3DAddIn_10](./E3DAddIn/E3DAddIn_10/README.md)
+
+This example focuses on **bidirectional communication between the PML Command-Line System and C#** using the `Aveva.Core.Utilities.dll` library.
+
+It demonstrates how to **send commands from C# to PML** and how to **retrieve global PML variables back into C#**, enabling a seamless data bridge between the two environments.
 
 ### [🔹 E3DAddIn_11](./E3DAddIn/E3DAddIn_11/README.md)
 
