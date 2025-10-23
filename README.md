@@ -60,13 +60,33 @@ However, depending upon the setup of the AVEVA Variables folder location may var
 
 ### [🔹 E3DAddIn_5](./E3DAddIn/E3DAddIn_5/README.md)
 
+This example demonstrates how to **customize and integrate user-defined events** within **AVEVA E3D**, showcasing the event-driven extensibility of the platform.
+
+The core class in this example is the **`DbEvent`** class, which enables developers to add event handlers based on specific requirements. This example primarily focuses on **database-related events**, illustrating how to listen for and respond to data changes in real time.
+
 ### [🔹 E3DAddIn_6](./E3DAddIn/E3DAddIn_6/README.md)
+
+This example demonstrates the **implementation and interaction of UI elements** such as **TextBox** and **ComboBox** implimentation in ribbon within **AVEVA E3D** using the Add-In framework.
 
 ### [🔹 E3DAddIn_7](./E3DAddIn/E3DAddIn_7/README.md)
 
+This example demonstrates how to **handle exceptions** — specifically **PDMS-specific exceptions (`PdmsException`)** and **general system exceptions** — within the AVEVA E3D Add-In environment.
+
+However, the similar example is convered under [`PMLNet`](https://github.com/shivangKheradiya/PMLNet) Examples too.
+
 ### [🔹 E3DAddIn_8](./E3DAddIn/E3DAddIn_8/README.md)
 
+This example demonstrates how to **utilize and extend existing AVEVA UserControls**, particularly focusing on the `NetGridControl` available within AVEVA’s `GridControl.dll`.
+
+The purpose of this example is to showcase how developers can **integrate AVEVA-native UI controls** directly into their own C# WinForms-based add-ins, while also adding **custom behaviors and interactions**.
+
 ### [🔹 E3DAddIn_9](./E3DAddIn/E3DAddIn_9/README.md)
+
+This example focuses on **element collection and filtering mechanisms** within AVEVA E3D.
+
+In AVEVA’s API, **collections** allow you to gather `DbElements` dynamically based on specific conditions such as element type, attribute states, or ownership hierarchy.
+
+This example demonstrates several **filter types** and their combinations to perform efficient, object-oriented database queries in E3D.
 
 ### [🔹 E3DAddIn_10](./E3DAddIn/E3DAddIn_10/README.md)
 
