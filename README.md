@@ -1,128 +1,110 @@
-# E3D_CSharp_Addin
+# 🧩 E3D_CSharp_Addin
 
-This repository represent the standard methods to effectively use the AVEVA IAddin interface used to create the Addins for the AVEVA Application. Additional this repository covers the other dll usecase proveded with AVEVA Software installation. By the time you are reading the examples mentioned here with the repository will slightly very depending upon which aveva application you are using.
+This repository represents a **comprehensive collection of examples** demonstrating how to effectively use the **AVEVA `IAddin`/`IAddinInjected` interface** to develop C# Add-Ins for AVEVA™ applications such as **E3D (Everything3D)**.
+
+In addition, it includes practical **use cases for other key AVEVA DLLs** commonly distributed with the AVEVA software installation.
+Depending on your AVEVA version and configuration, some examples may differ slightly — but the concepts remain universally applicable.
 
 ---
 
 ## 📦 Prerequisites
 
-- Visual Studio (2019 or later)
-- .NET Framework (version compatible with your AVEVA installation)
-- Access to AVEVA Software & It's installation directory
+Before getting started, ensure you have the following:
 
-For starting with this repository It's assumed that you are familar with the following key cocepts,
-- C# Language
-- Basic Concepts for WPF and WinForms
-- [PML](https://github.com/shivangKheradiya/AVEVA_PML)
-- [PMLNet](https://github.com/shivangKheradiya/PMLNet)
-- AVEVA Environment Setup Process [Example](https://github.com/shivangKheradiya/AVEVAEnvironment)
-- AVEVA Administration and User Fundamentals(Adds Extra value but not necessory). 
+* **Visual Studio 2019 or later**
+* **.NET Framework** (compatible with your AVEVA installation)
+* **Access to an AVEVA software installation directory**
+
+### Familiarity Recommended
+
+This repository assumes basic familiarity with:
+
+* 🧠 **C# Language**
+* 🪟 **WPF and WinForms**
+* ⚙️ [**PML**](https://github.com/shivangKheradiya/AVEVA_PML)
+* 🔗 [**PMLNet**](https://github.com/shivangKheradiya/PMLNet)
+* 🧰 [**AVEVA Environment Setup**](https://github.com/shivangKheradiya/AVEVAEnvironment)
+* 🧾 AVEVA Administration & User Fundamentals *(recommended but optional)*
 
 ---
 
 ## 📘 Overview
 
-Each project includes a `MyAddin.cs` class containing the core C# `IAddin` Interface implimentation into a class library. These libraries are consumed by AVEVA during application startup and all corrosponding chages required in the installation director is in the `E3DInstallationDir` folder.
+Each example project includes a **`MyAddin.cs`** class implementing the **C# `IAddin` interface**, packaged as a **Class Library**.
+These Add-In libraries are automatically **loaded by AVEVA during startup**. All necessary configuration changes for registration are located in the **`E3DInstallationDir`** folder.
 
-To run the examples:
- 
-- Create a folder for placing compiled DLLs and other Addins data files such as `E3DAddins` folder Inside the AVEVA installation directory
-- If required, Create a folder for placing UIC files required for addin such as `MyE3DUIC` folder Inside the AVEVA installation directory.
-- Update two important files into design installation directory. 
-    - `DesignAddins.xml` : Helps to register User Interface files e.g. UIC during the AVEVA Startup.
-    - `DesignCustomization.xml` : Helps to register `IAddins` implimentation library files into AVEVA Startup.
+### ⚙️ Setup Steps
 
-These procedure will remain common irrespective of the examples mentioned in this repository.
+To run or test the examples:
 
-However, depending upon the setup of the AVEVA Variables folder location may vary from company to company. and depending upon the application for which you are creating addins, the some steps and references may vary.
+1. **Create folders** inside your AVEVA installation directory:
 
-[`StartAPSE3D.bat`](./E3DAddIn/StartAPSE3D.bat) contains the script helps to directly open the Project within E3D. helpes to repid testing without entering the credentials in the startup form.
+   * `E3DAddins` → for compiled DLLs and Add-In data files.
+   * `MyE3DUIC` → for any UIC (User Interface Configuration) files used by the Add-In.
+
+2. **Update the following XML files** in your design installation directory:
+
+   * **`DesignAddins.xml`** → registers UI (UIC) files for AVEVA startup.
+   * **`DesignCustomization.xml`** → registers `IAddin` libraries for AVEVA startup.
+
+3. Use the provided startup helper script:
+   [`StartAPSE3D.bat`](./E3DAddIn/StartAPSE3D.bat)
+   This script launches your E3D project directly, bypassing manual credential entry for rapid testing.
+
+> 🧩 **Note:**
+> Folder structure and environment variable locations may differ between organizations and AVEVA versions.
+> Adjust paths and configurations accordingly.
 
 ---
 
 ## 📂 Table of Contents
 
-This Set of examples are prepared in such a way that majority of the examples are dependednt on previous examples to understand the integration in better manner.
+This repository follows a **progressive structure**, where each example builds upon concepts introduced in the previous one for a clearer understanding of AVEVA Add-In integration.
 
-### [🔹 E3DAddIn_1](./E3DAddIn/E3DAddIn_1/README.md)
+| Example                                                    | Description                                                                                              |
+| ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| [🔹 **E3DAddIn_1**](./E3DAddIn/E3DAddIn_1/README.md)       | Basic “Hello World” Add-In for AVEVA E3D.                                                                |
+| [🔹 **E3DAddIn_2**](./E3DAddIn/E3DAddIn_2/README.md)       | Extending AVEVA E3D functionality using UI components, commands, and services.                           |
+| [🔹 **E3DAddIn_3**](./E3DAddIn/E3DAddIn_3/README.md)       | Demonstrates **MDI windows** and other available UI form types.                                          |
+| [🔹 **E3DAddIn_4**](./E3DAddIn/E3DAddIn_4/README.md)       | Integration of **WPF `UserControl`** with **MDI Windows** for modern UI design.                          |
+| [🔹 **E3DAddIn_5**](./E3DAddIn/E3DAddIn_5/README.md)       | Handling and customizing **database-driven events** using the `DbEvent` class.                           |
+| [🔹 **E3DAddIn_6**](./E3DAddIn/E3DAddIn_6/README.md)       | Implementing **UI elements (TextBox, ComboBox)** in the AVEVA Ribbon via Add-Ins.                        |
+| [🔹 **E3DAddIn_7**](./E3DAddIn/E3DAddIn_7/README.md)       | Managing **exceptions** — both `PdmsException` and general system exceptions — within E3D Add-Ins.       |
+| [🔹 **E3DAddIn_8**](./E3DAddIn/E3DAddIn_8/README.md)       | Extending native **AVEVA UserControls** like `NetGridControl` to build enhanced custom UIs.              |
+| [🔹 **E3DAddIn_9**](./E3DAddIn/E3DAddIn_9/README.md)       | Demonstrates **element collection and filtering** using various database query methods.                  |
+| [🔹 **E3DAddIn_10**](./E3DAddIn/E3DAddIn_10/README.md)     | Enables **bidirectional communication** between C# and PML via `Aveva.Core.Utilities.dll`.               |
+| [🔹 **E3DAddIn_11**](./E3DAddIn/E3DAddIn_11/README.md)     | Explores **database tables** from `Aveva.Core.Database.dll` (e.g., `RefTable`, `NameTable`, `IntTable`). |
+| [🔹 **E3DAddIn_12**](./E3DAddIn/E3DAddIn_12/README.md)     | Explains **high-level form and UI object structures** under `DruidNet.dll` using reflection.             |
+| [🔹 **StandAloneE3D**](./E3DAddIn/StandAloneE3D/README.md) | Builds a **.NET Console App** using `Aveva.Core.Standalone.dll` to run AVEVA standalone.                 |
 
-- A simple “Hello World” Add-in example for AVEVA E3D
+---
 
-### [🔹 E3DAddIn_2](./E3DAddIn/E3DAddIn_2/README.md)
+## 🧠 Additional Notes
 
-- The project demonstrates how to extend AVEVA™ E3D functionality by integrating UI components, commands, and services using C#.
+The AVEVA installation directory often includes a **`Samples.zip`** file containing additional **C#.NET examples**.
+These official samples can further help you explore the AVEVA API ecosystem in depth.
 
-### [🔹 E3DAddIn_3](./E3DAddIn/E3DAddIn_3/README.md)
+There are **endless possibilities** when combining **C#**, **PML**, and **AVEVA’s extensibility features**.
+However, the true power lies in **how an organization defines its customization strategy** — shaping a strong, scalable, and efficient AVEVA ecosystem tailored to its workflows.
 
-- Focuses on demonstrating the use of **MDI (Multiple Document Interface) windows** and other types of the possible Window UI in AVEVA™ E3D.
-
-### [🔹 E3DAddIn_4](./E3DAddIn/E3DAddIn_4/README.md)
-
-- It demonstrates how to integrate **WPF (Windows Presentation Foundation)** `UserControl` elements into AVEVA™ E3D using an **MDI Window**.
-
-### [🔹 E3DAddIn_5](./E3DAddIn/E3DAddIn_5/README.md)
-
-This example demonstrates how to **customize and integrate user-defined events** within **AVEVA E3D**, showcasing the event-driven extensibility of the platform.
-
-The core class in this example is the **`DbEvent`** class, which enables developers to add event handlers based on specific requirements. This example primarily focuses on **database-related events**, illustrating how to listen for and respond to data changes in real time.
-
-### [🔹 E3DAddIn_6](./E3DAddIn/E3DAddIn_6/README.md)
-
-This example demonstrates the **implementation and interaction of UI elements** such as **TextBox** and **ComboBox** implimentation in ribbon within **AVEVA E3D** using the Add-In framework.
-
-### [🔹 E3DAddIn_7](./E3DAddIn/E3DAddIn_7/README.md)
-
-This example demonstrates how to **handle exceptions** — specifically **PDMS-specific exceptions (`PdmsException`)** and **general system exceptions** — within the AVEVA E3D Add-In environment.
-
-However, the similar example is convered under [`PMLNet`](https://github.com/shivangKheradiya/PMLNet) Examples too.
-
-### [🔹 E3DAddIn_8](./E3DAddIn/E3DAddIn_8/README.md)
-
-This example demonstrates how to **utilize and extend existing AVEVA UserControls**, particularly focusing on the `NetGridControl` available within AVEVA’s `GridControl.dll`.
-
-The purpose of this example is to showcase how developers can **integrate AVEVA-native UI controls** directly into their own C# WinForms-based add-ins, while also adding **custom behaviors and interactions**.
-
-### [🔹 E3DAddIn_9](./E3DAddIn/E3DAddIn_9/README.md)
-
-This example focuses on **element collection and filtering mechanisms** within AVEVA E3D.
-
-In AVEVA’s API, **collections** allow you to gather `DbElements` dynamically based on specific conditions such as element type, attribute states, or ownership hierarchy.
-
-This example demonstrates several **filter types** and their combinations to perform efficient, object-oriented database queries in E3D.
-
-### [🔹 E3DAddIn_10](./E3DAddIn/E3DAddIn_10/README.md)
-
-This example focuses on **bidirectional communication between the PML Command-Line System and C#** using the `Aveva.Core.Utilities.dll` library.
-
-It demonstrates how to **send commands from C# to PML** and how to **retrieve global PML variables back into C#**, enabling a seamless data bridge between the two environments.
-
-### [🔹 E3DAddIn_11](./E3DAddIn/E3DAddIn_11/README.md)
-
-This example demonstrates the **use cases and functionalities of different database tables** available in the `Aveva.Core.Database.dll`.
-These tables are extremely powerful and allow developers to **find, search, and filter elements** based on their **attributes, names, references, or numeric identifiers** within the active MDB (Model Database).
-
-By leveraging these built-in table structures, developers can efficiently perform element lookups without manually traversing the entire hierarchy.
-
-### [🔹 E3DAddIn_12](./E3DAddIn/E3DAddIn_12/README.md)
-
-### [🔹 StandAloneE3D](./E3DAddIn/StandAloneE3D/README.md)
-
---- 
+---
 
 ## 🤝 Contributing
 
-This repository is open-source and welcomes contributions! If you have ideas, enhancements, or additional examples to share, feel free to:
+Contributions are welcome!
+If you have ideas, improvements, or additional Add-In examples to share:
 
-- Fork the repo
-- Create a new branch
-- Submit a pull request
+1. **Fork** the repository
+2. **Create** a new feature branch
+3. **Submit** a pull request
 
-Let's build a stronger AVEVA customization community together.
+Together, we can build a stronger and more collaborative **AVEVA customization community**.
 
 ---
 
 ## 📬 Contact
 
-For questions, suggestions, or collaboration opportunities, please open an issue or start a discussion on GitHub.
+For questions, feedback, or collaboration opportunities,
+please **open an issue** or start a **GitHub discussion**.
 
 ---

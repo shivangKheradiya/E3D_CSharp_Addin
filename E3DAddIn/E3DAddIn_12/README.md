@@ -1,6 +1,7 @@
 # 🔹 E3DAddIn_12
 
 This example demonstrates the **high-level object structures** available under the `DruidNet.dll` assembly — one of the core dynamic libraries used by AVEVA E3D for managing **forms, dialogs, and UI elements**.
+
 It provides insight into how **AVEVA’s internal form-handling system** works and shows a basic reflection-based approach to inspect and interact with runtime UI objects.
 
 ---
