@@ -98,6 +98,11 @@ It demonstrates how to **send commands from C# to PML** and how to **retrieve gl
 
 ### [🔹 E3DAddIn_11](./E3DAddIn/E3DAddIn_11/README.md)
 
+This example demonstrates the **use cases and functionalities of different database tables** available in the `Aveva.Core.Database.dll`.
+These tables are extremely powerful and allow developers to **find, search, and filter elements** based on their **attributes, names, references, or numeric identifiers** within the active MDB (Model Database).
+
+By leveraging these built-in table structures, developers can efficiently perform element lookups without manually traversing the entire hierarchy.
+
 ### [🔹 E3DAddIn_12](./E3DAddIn/E3DAddIn_12/README.md)
 
 ### [🔹 StandAloneE3D](./E3DAddIn/StandAloneE3D/README.md)
