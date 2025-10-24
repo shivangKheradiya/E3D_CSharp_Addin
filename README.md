@@ -45,7 +45,7 @@ To run or test the examples:
 2. **Update the following XML files** in your design installation directory:
 
    * **`DesignAddins.xml`** → registers UI (UIC) files for AVEVA startup.
-   * **`DesignCustomization.xml`** → registers `IAddin` libraries for AVEVA startup.
+   * **`DesignCustomization.xml`** → registers `IAddin`/`IAddinInjected` libraries for AVEVA startup.
 
 3. Use the provided startup helper script:
    [`StartAPSE3D.bat`](./E3DAddIn/StartAPSE3D.bat)
