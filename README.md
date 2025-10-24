@@ -30,7 +30,7 @@ This repository assumes basic familiarity with:
 
 ## 📘 Overview
 
-Each example project includes a **`MyAddin.cs`** class implementing the **C# `IAddin` interface**, packaged as a **Class Library**.
+Each example project includes a **`MyAddin.cs`** class implementing the **C# `IAddin`/`IAddinInjected` interface**, packaged as a **Class Library**.
 These Add-In libraries are automatically **loaded by AVEVA during startup**. All necessary configuration changes for registration are located in the **`E3DInstallationDir`** folder.
 
 ### ⚙️ Setup Steps
