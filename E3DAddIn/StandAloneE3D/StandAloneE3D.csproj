@@ -34,19 +34,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Aveva.Core.Database">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D3.1\Aveva.Core.Database.dll</HintPath>
+      <HintPath>E:\(x86)\AVEVA\Everything3D2.10\Aveva.Core.Database.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Aveva.Core.Utilities">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D3.1\Aveva.Core.Utilities.dll</HintPath>
+      <HintPath>E:\(x86)\AVEVA\Everything3D2.10\Aveva.Core.Utilities.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Aveva.Core3D.Standalone">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D3.1\Aveva.Core3D.Standalone.dll</HintPath>
+      <HintPath>E:\(x86)\AVEVA\Everything3D2.10\Aveva.Core3D.Standalone.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Aveva.E3D.Standalone">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D3.1\Aveva.E3D.Standalone.dll</HintPath>
+      <HintPath>E:\(x86)\AVEVA\Everything3D2.10\Aveva.E3D.Standalone.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

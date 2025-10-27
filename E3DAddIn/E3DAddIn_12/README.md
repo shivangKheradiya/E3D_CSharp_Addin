@@ -22,6 +22,7 @@ In this example, reflection is used to explore these objects dynamically, allowi
 | **Reflection Usage**   | Demonstrates how to use .NET reflection to explore AVEVA’s internal UI object structure within `DruidNet.dll`.                     |
 | **Form Hierarchy**     | All AVEVA form types are derived from the base class `UI_DruidForm`, which in turn inherits from `System.Windows.Forms.Form`.      |
 | **Runtime Monitoring** | The add-in periodically (every 10 seconds) checks and prints the count of currently active PML forms within the AVEVA environment(CommandLine). |
+|**Form Move Event Extension**| When the pml form is moved. It performs commandline printing. |
 
 ---
 
@@ -33,7 +34,8 @@ Each time the timer ticks:
 
 1. The system enumerates all objects of type `UI_DruidForm`.
 2. Counts the number of open AVEVA PML forms.
-3. Prints the form count in the **Command-Line Output** window.
+3. Move the PML form such as `!!RunMacro` 
+4. The form count and A Messege While moving the form is printend in the **Command-Line Output** window.
 
 This demonstrates a simple but powerful diagnostic pattern for **monitoring UI activity** in real time.
 
@@ -47,13 +49,14 @@ This demonstrates a simple but powerful diagnostic pattern for **monitoring UI a
 | **2. Retrieve Type Information** | Reflection APIs (`Assembly.GetTypes()`) are used to list all available types.                        |
 | **3. Filter for UI_DruidForm**   | The code identifies form-related types and instances derived from `UI_DruidForm`.                    |
 | **4. Periodic Scanning**         | A 10-second timer checks the number of currently active forms and prints it in the E3D command-line. |
+|**5. Move Event Extension**| Whenever we move the form any event can be triggered if required.|
 
 ---
 
 ### ▶️ How to Test
 
 1. Register and load the **E3DAddIn_12** project into your AVEVA E3D environment.
-2. Open or close different forms (e.g., specification forms, element properties, model navigator, etc.).
+2. Open or close(Kill) different forms (e.g., specification forms, element properties, model navigator, etc.). and try to Move the PML Forms.
 3. Observe the **command-line output** — every 10 seconds, it will display the **current count of open PML forms**.
 4. Optionally, attach a debugger to inspect the reflection calls and view which form types are being enumerated.
 

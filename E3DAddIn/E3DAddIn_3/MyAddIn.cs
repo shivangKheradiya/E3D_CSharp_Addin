@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace E3DAddIn_3
 {
-    public class MyAddIn : IAddin
+    public class MyAddIn : IAddinInjected
     {
         public string Name
         {
@@ -22,10 +22,15 @@ namespace E3DAddIn_3
 
         public void Start(ServiceManager serviceManager)
         {
-            WindowManager E3DWindowManager = (WindowManager)serviceManager.GetService(typeof(WindowManager));
+
+        }
+
+        public void Start(IDependencyResolver resolver)
+        {
+            WindowManager E3DWindowManager = (WindowManager)resolver.GetImplementationOf<IWindowManager>();
             DockingWindowCmd dwCmd = new DockingWindowCmd(E3DWindowManager);
             MdiWindowCmd mdiCmd = new MdiWindowCmd(E3DWindowManager);
-            CommandManager E3DCommandManager = (CommandManager)serviceManager.GetService(typeof(CommandManager));
+            CommandManager E3DCommandManager = (CommandManager)resolver.GetImplementationOf<ICommandManager>();
             E3DCommandManager.Commands.Add(dwCmd);
             E3DCommandManager.Commands.Add(mdiCmd);
         }
