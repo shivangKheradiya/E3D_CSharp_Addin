@@ -22,9 +22,14 @@ namespace E3DAddIn_2
 
         public void Start(ServiceManager serviceManager)
         {
-            WindowManager E3DWindowManager = (WindowManager)serviceManager.GetService(typeof(WindowManager));
+            // For old Versions
+            //WindowManager E3DWindowManager = (WindowManager)serviceManager.GetService(typeof(WindowManager));
+
+            // Fore new Versions
+            WindowManager E3DWindowManager = (WindowManager)DependencyResolver.GetImplementationOf<IWindowManager>();
+            CommandManager E3DCommandManager = (CommandManager)DependencyResolver.GetImplementationOf<ICommandManager>();
+
             DockingWindowCmd dwCmd = new DockingWindowCmd(E3DWindowManager);
-            CommandManager E3DCommandManager = (CommandManager)serviceManager.GetService(typeof(CommandManager));
             E3DCommandManager.Commands.Add(dwCmd);
         }
 

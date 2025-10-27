@@ -32,19 +32,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Aveva.ApplicationFramework">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D3.1\Aveva.ApplicationFramework.dll</HintPath>
+      <HintPath>E:\(x86)\AVEVA\Everything3D2.10\Aveva.ApplicationFramework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Aveva.ApplicationFramework.Presentation">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D3.1\Aveva.ApplicationFramework.Presentation.dll</HintPath>
+      <HintPath>E:\(x86)\AVEVA\Everything3D2.10\Aveva.ApplicationFramework.Presentation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Aveva.Core.Database">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D3.1\Aveva.Core.Database.dll</HintPath>
+      <HintPath>E:\(x86)\AVEVA\Everything3D2.10\Aveva.Core.Database.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Aveva.Core.Utilities">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D3.1\Aveva.Core.Utilities.dll</HintPath>
+      <HintPath>E:\(x86)\AVEVA\Everything3D2.10\Aveva.Core.Utilities.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

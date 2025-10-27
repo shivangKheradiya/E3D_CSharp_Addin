@@ -11,21 +11,13 @@ using swf = System.Windows.Forms;
 
 namespace E3DAddIn_12
 {
-    public class FormCounter
-    {
-        public string FormName { get; set; }
-        public int CounterForOpen { get; set; }
-        public bool isAlive { get; set; }
-    }
-
     public class MyAddIn : IAddin
     {
         int formsCount;
         swf.Timer timer;
-        List<FormCounter> Counter = new List<FormCounter>();
 
         Assembly DruidNetAssembly;
-        Type FormType;
+        Type DruidPMLFormType;
 
         public string Name
         {
@@ -39,10 +31,10 @@ namespace E3DAddIn_12
 
         public void Start(ServiceManager serviceManager)
         {
-            string dllFilePath = @"C:\Program Files (x86)\AVEVA\Everything3D3.1\DruidNet.dll"; 
+            string dllFilePath = @"C:\Program Files (x86)\AVEVA\Everything3D2.10\DruidNet.dll"; 
             DruidNetAssembly = Assembly.LoadFile(dllFilePath);
             string typeName = "Aveva.Core.Presentation.Druid.UI_DruidForm";
-            FormType = DruidNetAssembly.GetType(typeName);
+            DruidPMLFormType = DruidNetAssembly.GetType(typeName);
 
             formsCount = swf.Application.OpenForms.Count;
             timer = new swf.Timer();
@@ -55,58 +47,31 @@ namespace E3DAddIn_12
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            int formCounterNew = swf.Application.OpenForms.Count;
+            int formsCount = swf.Application.OpenForms.Count;
 
-            if (formCounterNew != formsCount) 
+            Command.CreateCommand(string.Format(@"$P Form Count : {0}", formsCount)).RunInPdms();
+            if (formsCount != 0)
             {
                 timer.Stop();
-                formsCount = formCounterNew;
 
-                List<Form> openForms = new List<Form>();
-
-                foreach (Form fm in swf.Application.OpenForms) 
+                Command.CreateCommand(@"$P ------------------------").RunInPdms();
+                foreach (Form fm in swf.Application.OpenForms)
                 {
                     Type type = fm.GetType();
 
-                    if(type == FormType)
+                    if (type == DruidPMLFormType)
                     {
-                        openForms.Add(fm);
-                    }
-                }
-
-                foreach (Form frm in openForms)
-                {
-                    if (!Counter.Exists(o => o.FormName == frm.Text))
-                    {
-                        Counter.Add(new FormCounter() { FormName = frm.Text, CounterForOpen = 1, isAlive = true});
-                    }
-                    else
-                    {
-                        FormCounter fmCounter = Counter.Find(o => o.FormName == frm.Text);
-                        if (!fmCounter.isAlive)
-                        {
-                            fmCounter.CounterForOpen += 1;
-                            fmCounter.isAlive = true;
-                        }
-                    }
-                }
-                
-                foreach (FormCounter fmc in Counter)
-                {
-                    if (openForms.Exists(o => o.Text == fmc.FormName))
-                    {
-                        fmc.isAlive = false;
+                        Command.CreateCommand(string.Format(@"$P {0} Form is opened.", fm.Text)).RunInPdms();
+                        fm.Move += Fm_Move;
                     }
                 }
             }
-
-            Command.CreateCommand(@"$P ------------------------").RunInPdms();
-            foreach (FormCounter logForm in Counter)
-            {
-                Command.CreateCommand(string.Format(@"$P {0} Form is open {1} times.", logForm.FormName, logForm.CounterForOpen)).RunInPdms();
-            }
-
             timer.Enabled = true;
+        }
+
+        private void Fm_Move(object sender, EventArgs e)
+        {
+            Command.CreateCommand("$p Form Is Moving...").RunInPdms();
         }
 
         public void Stop()

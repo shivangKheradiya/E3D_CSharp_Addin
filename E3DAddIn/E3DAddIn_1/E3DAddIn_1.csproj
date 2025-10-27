@@ -36,14 +36,6 @@
       <HintPath>C:\cae_prog\AVEVA\v2.x\e3d\Aveva.ApplicationFramework.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Aveva.ApplicationFramework.Presentation">
-      <HintPath>C:\cae_prog\AVEVA\v2.x\e3d\Aveva.ApplicationFramework.Presentation.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Aveva.Core.Database">
-      <HintPath>C:\cae_prog\AVEVA\v2.x\e3d\Aveva.Core.Database.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />

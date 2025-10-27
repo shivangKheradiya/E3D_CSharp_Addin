@@ -32,11 +32,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Aveva.ApplicationFramework">
-      <HintPath>..\..\..\..\cae_prog\AVEVA\v2.x\e3d\Aveva.ApplicationFramework.dll</HintPath>
+      <HintPath>E:\(x86)\AVEVA\Everything3D2.10\Aveva.ApplicationFramework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Aveva.ApplicationFramework.Presentation">
-      <HintPath>..\..\..\..\cae_prog\AVEVA\v2.x\e3d\Aveva.ApplicationFramework.Presentation.dll</HintPath>
+      <HintPath>E:\(x86)\AVEVA\Everything3D2.10\Aveva.ApplicationFramework.Presentation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PresentationCore" />
